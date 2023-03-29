@@ -33,10 +33,10 @@ public class MenuDemo {
                     e2.solveAnEquationOfDegree2();
                     break;
                 case 3:
-//                    return;
-                    break top;
+//                    return;       // chỉ thoát vòng lặp gần nhất (nếu có nhiều vòng lặp lồng nhau)
+                    break top;      //cách thoát vòng lặp bằng cách gắn label. Nếu muốn thoát 1 bước lặp dùng continue top;
                 default:
-                    System.out.println("You have choose 1 or 2 or 3!");
+                    System.out.println("You have to choose 1 or 2 or 3!");
             }
         }
         

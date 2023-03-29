@@ -30,7 +30,7 @@ public class EquationOfDegree2 {
         c = s.nextDouble();
     }
     
-    public double calDelta() {
+    private double calDelta() {
         return b * b - 4 * a * c;
     }
     
@@ -41,11 +41,11 @@ public class EquationOfDegree2 {
         if (delta < 0) {
             System.out.println("No solution");
         } else if (delta == 0){
-            System.out.println("x = " + -b/2*a);
+            System.out.println("x = " + -b/(2*a));
         } else {
             System.out.println("Equation have two solutions");
-            System.out.println("x1 = " + (-b + Math.sqrt(delta)) / 2 * a);
-            System.out.println("x2 = " + (-b - Math.sqrt(delta)) / 2 * a);
+            System.out.println("x1 = " + (-b + Math.sqrt(delta)) / (2 * a));
+            System.out.println("x2 = " + (-b - Math.sqrt(delta)) / (2 * a));
         }
     }
     
