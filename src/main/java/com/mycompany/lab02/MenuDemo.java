@@ -15,7 +15,7 @@ public class MenuDemo {
     static Scanner s = new Scanner(System.in);
     
     public static void main(String[] args) {
-        while (true) {
+        top: while (true) {
             System.out.println("---------------MENU----------------");
             System.out.println("1. Solve an equation of degree 1.");
             System.out.println("2. Solve an equation of degree 2.");
@@ -33,9 +33,10 @@ public class MenuDemo {
                     e2.solveAnEquationOfDegree2();
                     break;
                 case 3:
-                    return;
+//                    return;
+                    break top;
                 default:
-                    throw new AssertionError();
+                    System.out.println("You have choose 1 or 2 or 3!");
             }
         }
         

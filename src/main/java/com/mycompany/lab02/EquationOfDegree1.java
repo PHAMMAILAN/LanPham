@@ -15,7 +15,7 @@ public class EquationOfDegree1 {
     private double a;
     private double b;
     
-    static Scanner s = new Scanner(System.in);
+    private static Scanner s = new Scanner(System.in);
     public EquationOfDegree1() {
         inputNumber();
     }

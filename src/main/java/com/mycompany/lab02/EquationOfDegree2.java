@@ -15,7 +15,7 @@ public class EquationOfDegree2 {
     private double b;
     private double c;
     
-    static Scanner s = new Scanner(System.in);
+    private static Scanner s = new Scanner(System.in);
     
     public EquationOfDegree2() {
         inputNumber();
@@ -30,13 +30,13 @@ public class EquationOfDegree2 {
         c = s.nextDouble();
     }
     
-    public double calDelta(double a, double b, double c) {
+    public double calDelta() {
         return b * b - 4 * a * c;
     }
     
     
     public void solveAnEquationOfDegree2 () {
-        double delta = calDelta(a, b, c);
+        double delta = calDelta();
         
         if (delta < 0) {
             System.out.println("No solution");
