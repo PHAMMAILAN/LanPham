@@ -30,7 +30,7 @@ public class Main {
             System.out.println(i.n + " khong la SNT");
         }
         
-        //in ra n SNT dau tien
+        //in ra a SNT dau tien
         int a = i.n;
         int count = 0;
         i.n = 2;
