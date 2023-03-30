@@ -15,7 +15,7 @@ public class EquationOfDegree2 {
     private double b;
     private double c;
     
-    private static Scanner s = new Scanner(System.in);
+    public static Scanner s = new Scanner(System.in);
     
     public EquationOfDegree2() {
         inputNumber();
@@ -32,12 +32,10 @@ public class EquationOfDegree2 {
     
     private double calDelta() {
         return b * b - 4 * a * c;
-    }
-    
+    }    
     
     public void solveAnEquationOfDegree2 () {
-        double delta = calDelta();
-        
+        double delta = calDelta();        
         if (delta < 0) {
             System.out.println("No solution");
         } else if (delta == 0){
@@ -47,7 +45,11 @@ public class EquationOfDegree2 {
             System.out.println("x1 = " + (-b + Math.sqrt(delta)) / (2 * a));
             System.out.println("x2 = " + (-b - Math.sqrt(delta)) / (2 * a));
         }
-    }
-    
-    
+    }   
+
+    @Override
+    protected void finalize() throws Throwable {        //trước khi object bị hủy sẽ call hàm finalie()
+        super.finalize(); 
+        System.out.println("Finalize");
+    }    
 }

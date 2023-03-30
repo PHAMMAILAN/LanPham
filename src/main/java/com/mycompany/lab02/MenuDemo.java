@@ -12,17 +12,16 @@ import java.util.Scanner;
  */
 public class MenuDemo {
     
-    static Scanner s = new Scanner(System.in);
-    
     public static void main(String[] args) {
         top: while (true) {
+            System.gc();
             System.out.println("---------------MENU----------------");
             System.out.println("1. Solve an equation of degree 1.");
             System.out.println("2. Solve an equation of degree 2.");
             System.out.println("3. Finish.");
             System.out.println("-----------------------------------");
             System.out.print("Enter an option: ");
-            int op = s.nextInt();
+            int op = EquationOfDegree2.s.nextInt();
             switch (op) {
                 case 1:
                     EquationOfDegree1 e1 = new EquationOfDegree1();
